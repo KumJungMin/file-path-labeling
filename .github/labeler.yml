@@ -1,4 +1,4 @@
 desktop:
-  - all: ["desktop/*"]
+  - all: ["desktop/**/*"]
 mobile:
-  - all: ["mobile/*"]
+  - all: ["mobile/**/*"]
