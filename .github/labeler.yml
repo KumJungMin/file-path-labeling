@@ -2,3 +2,7 @@ desktop:
   - desktop/*
 mobile:
   - mobile/*
+root:
+  - "*"
+  - .github/*
+  - "common/*"
