@@ -1,0 +1,6 @@
+desktop:
+  - any: ["desktop/*"]
+    all: ["!mobile/*", "!common/*", "*"]
+mobile:
+  - any: ["mobile/*"]
+    all: ["!desktop/*", "!common/*", "*"]
