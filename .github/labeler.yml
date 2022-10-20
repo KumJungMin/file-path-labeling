@@ -1,4 +1,4 @@
 desktop:
-  - all: ["desktop/**/*"] #desktop 폴더, 하위 폴더에서만 변화가 있을 때 desktop 라벨을 붙임
+  - all: ["!mobile/**/*"]
 mobile:
-  - all: ["mobile/**/*"] #mobile 폴더, 하위 폴더에서만 변화가 있을 때 mobile 라벨을 붙임
+  - all: ["!desktop/**/*"]
