@@ -1,4 +1,4 @@
-desktop: ["packages/desktop/**/*"]  
-// 데스크탑 폴더에 어떤 거 하나라도 변경시 desktop 라벨 붙이기
+desktop: ["packages/desktop/**/*"]
+# 데스크탑 폴더에 어떤 거 하나라도 변경시 desktop 라벨 붙이기
 mobile: ["packages/mobile/**/*"]
-// 모바일 폴더에 어떤 거 하나라도 변경시 mobile 라벨 붙이기
+# 모바일 폴더에 어떤 거 하나라도 변경시 mobile 라벨 붙이기
