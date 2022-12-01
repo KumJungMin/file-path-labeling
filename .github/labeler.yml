@@ -1,18 +1,2 @@
-desktop:
-  [
-    "packages/desktop/*",
-    "packages/desktop/**/*",
-    "!packages/mobile/*",
-    "!packages/mobile/**/*",
-    "!packages/electron/*",
-    "!packages/electron/**/*",
-  ]
-mobile:
-  [
-    "packages/mobile/*",
-    "packages/mobile/**/*",
-    "!packages/desktop/*",
-    "!packages/desktop/**/*",
-    "!packages/electron/*",
-    "!packages/electron/**/*",
-  ]
+desktop: ["packages/desktop//*", "!packages/mobile//*", "!packages/electron//*"]
+mobile: ["packages/mobile//*", "!packages/desktop//*", "!packages/electron//*"]
