@@ -1,4 +1,7 @@
-desktop:
-  ["packages/desktop/**/*", "!packages/mobile/**/*", "!packages/electron/**/*"]
-mobile:
-  ["packages/mobile/**/*", "!packages/desktop/**/*", "!packages/electron/**/*"]
+# 일렉트론만 수정한 경우
+electron:
+  - all: ["packages/electron/**/*"]
+
+desktop: ["packages/desktop/**/*", "!packages/mobile/**/*"]
+
+mobile: ["packages/mobile/**/*", "!packages/desktop/**/*"]
