@@ -1,11 +1,21 @@
 desktop:
   - all: ["!packages/electron/**/*"]
   - all: ["!packages/mobile/**/*"]
-  - all: ["!packages/electron/**/*", "!packages/mobile/**/*"]
+  - any:
+      [
+        "packages/desktop/**/*",
+        "!packages/electron/**/*",
+        "!packages/mobile/**/*",
+      ]
 mobile:
   - all: ["!packages/electron/**/*"]
   - all: ["!packages/desktop/**/*"]
-  - all: ["!packages/electron/**/*", "!packages/desktop/**/*"]
+  - any:
+      [
+        "packages/mobile/**/*",
+        "!packages/electron/**/*",
+        "!packages/desktop/**/*",
+      ]
 # !a, !b
 # !a
 # !b
