@@ -1,5 +1,7 @@
 desktop:
   - all: ["@(!packages/mobile/**/* | !packages/electron/**/*)"]
+    any: ["packages/desktop/**/*"]
 
 mobile:
   - all: ["@(!packages/desktop/**/* | !packages/electron/**/*)"]
+    any: ["packages/mobile/**/*"]
