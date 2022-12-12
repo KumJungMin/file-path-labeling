@@ -1,2 +1,12 @@
-desktop: ["!packages/mobile/**/*", "!packages/electron/**/*"]
-mobile: ["!packages/desktop/**/*", "!packages/electron/**/*"]
+desktop:
+  - all: [+('!packages/mobile/**/*' | '!packages/electron/**/*')]
+mobile:
+  - all: [+('!packages/desktop/**/*' | '!packages/electron/**/*')]
+# !a, !b
+# !a
+# !b
+# +(a|b)
+# +('!packages/mobile/**/*' | '!packages/electron/**/*')
+# 데스크탑만 수정한 경우
+# 일렉트론만 수정한 경우
+# glob -> all(a || b)
