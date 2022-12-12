@@ -1,3 +1,2 @@
-desktop: ["*(!packages/mobile/**/* | !packages/electron/**/*)"]
-
-mobile: ["*(!packages/desktop/**/* | !packages/electron/**/*)"]
+desktop: ["!packages/mobile/**/*", "!packages/electron/**/*"]
+mobile: ["!packages/desktop/**/*", "!packages/electron/**/*"]
